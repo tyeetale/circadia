@@ -8,3 +8,12 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Data
+data/*.duckdb
+data/tokens.json
+data/raw/*.json
+
+# Environment
+.env
+.env.local

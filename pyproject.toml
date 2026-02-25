@@ -16,13 +16,20 @@ dependencies = [
     "schedule>=1.2.0",
     "pydantic-settings>=2.13.1",
     "scikit-learn>=1.8.0",
+    "streamlit>=1.54.0",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest", "ruff", "mypy"]
 
+[project.scripts]
+circadia = "main:main"
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/circadia"]
+
+[tool.streamlit]
+runOnSave = true
 
 [tool.ruff]
 line-length = 100
